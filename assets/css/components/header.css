@@ -1,0 +1,163 @@
+/* Estilos para o cabeçalho */
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Estilos para o conteúdo dentro do cabeçalho */
+header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para os contêineres */
+.container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para a lista de navegação */
+header .navBar ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Estilos para os links de navegação */
+header .navBar ul li a {
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos para o link de navegação ativo */
+header .navBar ul li a.active {
+    color: #ffa500;
+}
+
+/* Estilos para o efeito hover nos links de navegação */
+header .navBar ul li a:hover {
+    color: #57cb9b;
+}
+
+/* Estilos para a área do menu mobile */
+header .menuArea {
+    display: none;
+}
+
+/* Estilos para o botão do menu mobile */
+header .menuArea .menuBtn {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* Estilos para as linhas do botão do menu mobile */
+header .menuArea .menuBtn span {
+    background-color: black;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para a primeira linha do botão do menu mobile */
+header .menuArea .menuBtn .line-1 {
+    transform: translate(-50%, -13px);
+}
+
+/* Estilos para a terceira linha do botão do menu mobile */
+header .menuArea .menuBtn .line-3 {
+    transform: translate(-50%, 8px);
+}
+
+/* Estilos para o botão do menu mobile quando aberto */
+header .menuArea .menuBtn.openmenu .line-1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Estilos para o botão do menu mobile quando aberto */
+header .menuArea .menuBtn.openmenu .line-3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Estilos para o botão do menu mobile quando aberto */
+header .menuArea .menuBtn.openmenu .line-2 {
+    width: 0;
+}
+
+/* Media Query para dispositivos com tela menor que 1120px */
+@media screen and (max-width: 1120px) {
+    /* Exibição do menu mobile */
+    header .menuArea {
+        display: block;
+    }
+
+    /* Ocultar a imagem do logotipo */
+    header .logoArea .image {
+        display: none;
+    }
+
+    /* Exibir o nome do site */
+    header .logoArea .siteName {
+        display: block;
+        width: 220px;
+    }
+
+    /* Estilos para a barra de navegação no modo mobile */
+    header .navBar {
+        width: 100%;
+        background-color: #1f2024;
+        max-height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+
+    /* Estilos para a barra de navegação quando aberta */
+    header .navBar.open {
+        visibility: visible;
+    }
+
+    /* Estilos para a lista de navegação no modo mobile */
+    header .navBar ul {
+        padding: 0 30px;
+    }
+
+    /* Estilos para os itens da lista de navegação no modo mobile */
+    header .navBar ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    /* Estilos para os links de navegação no modo mobile */
+    header .navBar ul li a {
+        color: #fff;
+    }
+}
+
+/* Media Query para dispositivos com tela menor que 1400px */
+@media (max-width: 1400px) {
+    /* Ajuste para a largura da imagem do banner principal */
+    .banner-principal .banner {
+        height: 100%;
+        width: auto;
+        max-width: none;
+    }
+}

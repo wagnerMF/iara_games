@@ -1,0 +1,24 @@
+/* Resetando estilos para todos os elementos */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font: 16px sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Estilos para o corpo do documento */
+body {
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ocultando a barra de rolagem no navegador Chrome */
+body::-webkit-scrollbar {
+    display: none;
+}

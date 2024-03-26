@@ -1,0 +1,41 @@
+/* Importação dos estilos de componentes */
+@import url("components/base.css");
+@import url("components/header.css");
+@import url("components/footer.css");
+@import url("components/aside.css");
+@import url("components/articles.css");
+@import url("components/banner.css");
+
+/* Estilos para a seção principal */
+main {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* Estilos para o contêiner principal */
+main .main-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 25%;
+    column-gap: 5%;
+}
+
+/* Media Query para dispositivos com tela menor que 1120px */
+@media screen and (max-width: 1120px) {
+    /* Ajuste da largura do contêiner principal */
+    main .main-container {
+        width: 95%;
+    }
+}
+
+/* Media Query para dispositivos com tela menor que 768px */
+@media screen and (max-width: 768px) {
+    /* Modificação do layout para uma única coluna */
+    main .main-container {
+        grid-template-columns: 100%;
+    }
+}

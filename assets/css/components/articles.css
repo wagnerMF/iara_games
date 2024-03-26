@@ -1,0 +1,121 @@
+/* Estilos para cabeçalho de seção quando não há jogos */
+section .noGames h2 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Estilos para a área de artigos */
+section .article-area {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+}
+
+/* Estilos para a área de botões */
+section .buttonArea {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões */
+section .buttonArea .btn {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #57cb9b;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+section .buttonArea .btn:hover {
+    background-color: #1f2024;
+}
+
+/* Estilos para os artigos */
+article {
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Estilos para o container do artigo */
+article .article-container {
+    width: 85%;
+    margin: auto;
+    padding: 8px 0;
+}
+
+/* Estilos para as imagens dos artigos */
+article img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+article img:hover {
+    opacity: 85%;
+}
+
+/* Estilos para os títulos dos artigos */
+article h1 {
+    color: black;
+}
+
+/* Estilos para a linha divisória */
+article hr {
+    border: 2px solid #e0e0e0;
+    margin-bottom: 4px;
+}
+
+/* Estilos para os links dos títulos dos artigos */
+article h1 a {
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+article h1 a:hover {
+    color: #57cb9b;
+}
+
+/* Estilos para os subtítulos dos artigos */
+article h2 {
+    margin-bottom: 10px;
+    color: #aaaaaa;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+article h2 a {
+    color: #aaaaaa;
+}
+
+article h2 a:hover {
+    color: #57cb9b;
+}
+
+/* Estilos para os parágrafos dos artigos */
+article p {
+    font-size: 16px;
+    color: #65656a;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    /* Comprimento do Texto */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Media Query para dispositivos com tela menor que 620px */
+@media screen and (max-width: 620px) {
+    section .article-area {
+        grid-template-columns: 100%;
+    }
+}

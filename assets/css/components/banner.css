@@ -1,0 +1,90 @@
+/* Estilos para o banner principal */
+#iara-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../img/2BG2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para a área de texto do banner */
+#iara-banner .textArea {
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 40px;
+}
+
+/* Estilos para o título do banner */
+#iara-banner .textArea h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Estilos para o destaque do título do banner */
+#iara-banner .textArea h1 .highlight {
+    color: #ffa500;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Estilos para o texto do banner */
+#iara-banner .textArea p {
+    color: #fff;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Estilos para o botão do banner */
+#iara-banner .textArea .btn {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #57cb9b;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#iara-banner .textArea .btn:hover {
+    background-color: #1f2024;
+}
+
+/* Media Query para dispositivos com tela menor que 1120px */
+@media screen and (max-width: 1120px) {
+    /* Ajustes para a área de texto do banner */
+    #iara-banner .textArea {
+        padding-top: 120px;
+    }
+
+    /* Ajustes para o tamanho do título do banner */
+    #iara-banner .textArea h1 {
+        font-size: 44px;
+    }
+
+    /* Ajustes para o tamanho do texto do banner */
+    #iara-banner .textArea p {
+        font-size: 16px;
+        width: 60%;
+    }
+}
+
+/* Media Query para dispositivos com tela menor que 768px */
+@media screen and (max-width: 768px) {
+    /* Ajustes para a área de texto do banner */
+    #iara-banner .textArea {
+        padding-top: 100px;
+    }
+
+    /* Ajustes para o tamanho do texto do banner */
+    #iara-banner .textArea p {
+        width: 80%;
+    }
+}

@@ -1,0 +1,12 @@
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #1f2024;
+    margin-top: auto;
+}
+
+footer .navBar {
+    padding: 20px 0 10px 0;
+    text-align: center;
+    color: antiquewhite;
+}
